@@ -1,0 +1,18 @@
+<div class="container-fluid text-white">
+  <div class="row">
+    <div class="col my-3">
+      <h2>En este componente se le pasan parametros (se puede apreciar en la barra de navegación)</h2>
+    </div>
+    <div class="mt-2 mb-3" *ngIf="cadena == 'Manrique Cordero'; else nombre">
+      <h4>Mi routerLink es el siguiente: <b class="text-warning">[routerLink]="['/parametros-componente/Manrique Cordero']"</b></h4>
+    </div>
+    <ng-template #nombre>
+      <div class="mt-2 mb-3">
+        <h4>Mi routerLink es el siguiente: <b class="text-warning">[routerLink]="['/parametros-componente','David']"</b></h4>
+      </div>
+    </ng-template>
+    <div>
+      <h4>La cadena pasada por parametro es: <b><i>{{cadena}}</i></b></h4>
+    </div>
+  </div>
+</div>

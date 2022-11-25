@@ -1,0 +1,40 @@
+<div class="container-fluid text-white">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="my-4">Hola muy buenas soy el componente numero 2</h1>
+    </div>
+    <div class="col mt-3 mb-5">
+      <h4>Mi routerLink es el siguiente: <b class="text-warning">[routerLink]="./segundo-componente"</b></h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <h2>Componente Padre:</h2>
+    </div>
+    <div class="col-6 mb-3">
+      <h2><b><i>Segundo Component</i></b></h2>
+    </div>
+    <div class="offset-5 col-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-down-left-square-fill" viewBox="0 0 16 16">
+        <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm8.096-10.803L6 9.293V6.525a.5.5 0 0 0-1 0V10.5a.5.5 0 0 0 .5.5h3.975a.5.5 0 0 0 0-1H6.707l4.096-4.096a.5.5 0 1 0-.707-.707z" />
+      </svg>
+    </div>
+    <div class="offset-1 col-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-down-right-square-fill" viewBox="0 0 16 16">
+        <path d="M14 16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12zM5.904 5.197 10 9.293V6.525a.5.5 0 0 1 1 0V10.5a.5.5 0 0 1-.5.5H6.525a.5.5 0 0 1 0-1h2.768L5.197 5.904a.5.5 0 0 1 .707-.707z" />
+      </svg>
+    </div>
+    <div class="col-4 my-4">
+      <h2>Componentes hijos:</h2>
+    </div>
+    <div class="col-2 my-4 text-center">
+      <h2><b><i>Hijo1 Component</i></b> </h2>
+    </div>
+    <div class="offset-3 col-2 my-4 text-center">
+      <h2><b><i>Hijo2 Component</i></b></h2>
+    </div>
+  </div>
+  <button class="btn btn-primary me-3 mb-4" [routerLink]="['/segundo-componente', 'hijo1']">Ir a mi 1º hijo</button>
+  <button class="btn btn-danger mb-4" [routerLink]="['/segundo-componente', 'hijo2']">Ir a mi 2º hijo</button>
+</div>
+<router-outlet></router-outlet>
